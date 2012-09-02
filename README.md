@@ -76,7 +76,25 @@ custom Exception&nbsp; handler will thrown custom error messages&nbsp;
 a database error might occure . <br>
 </li>
 </ul>
-<h3>Licence :</h3>
+<h3>02/09/2012 : New version released (V0.4)</h3>
+<ul>
+<li>An extra line of code is added on <span
+style="font-weight: bold;">javascript/custom_jquery.js</span> (line
+33) . It just disables the Ajax-call when no more results are returned
+from&nbsp; the PHP-script (most likely because the database has no more
+results to deliver) . This prevents Ajax from sending requests to the
+server even if it receives empty results .</li>
+<li>A second file is added into the javascript folder
+(custom_jquery_debug.js) . This file has extensive "console.log" lines
+enabled , various messages are displayed into browser's console panel
+(of course&nbsp; browser's developer tool should be enabled first) . If
+there is need for client-side debugging , import this file into
+index.php&nbsp;&nbsp; instead of the defauld file (custom_jquery.js) . <br>
+</li>
+</ul>
+<br>
+<hr>
+<h3>License :</h3>
 /**<br>
 &nbsp;* Infinite scrolling&nbsp; <br>
 &nbsp;* <br>
@@ -110,3 +128,4 @@ License<br>
 <br>
 </body>
 </html>
+

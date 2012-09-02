@@ -28,6 +28,9 @@ return ;
 	$('div#loadMoreComments').hide();
 	}else{		
 	$('div#loadMoreComments').replaceWith("<center><h1 style='color:red'>End of countries !!!!!!!</h1></center>");
+// Added on Ver.0.4  
+//Disable Ajax when result from PHP-script is empty (no more DB-results )
+	 doMouseWheel = 0 ; 
 	}
 	}
 	});
